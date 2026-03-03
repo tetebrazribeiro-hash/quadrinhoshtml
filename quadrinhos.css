@@ -1,0 +1,38 @@
+/* Estilizando o Header */
+.cabecalho {
+    background-color: yellow; /*Cor de fundo
+     do header*/
+     display: flex; /*Tornando os itens lado a 
+     lado | Flexbox*/
+     align-items: center; /*Alinhamento vertical */
+     justify-content: space-evenly; /*Alinhamento horizontal */
+     padding: 30px; /* Preenchimento interno */
+
+}
+/* Estilização da logo */
+.img-header {
+    width: 100px; /*Largura da logo Header*/
+}
+
+/* Estilização da lista */
+.ul-lista li { 
+list-style: none; /* removendo as bolinhas da lista */
+}
+/* Estilização da UL (elemento pai da LI */
+.ul-lista {
+    display: flex;
+    /* tornando as litas lado a lado(flexbox)
+     */
+    gap: 15px; /* Espaçamento entre as listas */
+}
+
+/* Aqui estamos estilizando a âncora */
+    .ul-lista li a{
+        text-decoration: none;/*Removendo o sublinhado da âncora*/
+        color: black; /* Cor da letra */
+        font-size: 20px; /* Tamanho da letra */
+        text-transform: uppercase; /* Tornando o texto em CapsLock */
+        font-weight: 700; 
+        /*Peso/Espessura da letra */
+
+    }
