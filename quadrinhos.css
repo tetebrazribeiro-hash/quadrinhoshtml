@@ -1,40 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
 
 /* Estilizando o Header */
 .cabecalho {
-    background-color: yellow; /*Cor de fundo
+    background-color: yellow;
+    /*Cor de fundo
      do header*/
-     display: flex; /*Tornando os itens lado a 
+    display: flex;
+    /*Tornando os itens lado a 
      lado | Flexbox*/
-     align-items: center; /*Alinhamento vertical */
-     justify-content: space-evenly; /*Alinhamento horizontal */
-     padding: 30px; /* Preenchimento interno */
+    align-items: center;
+    /*Alinhamento vertical */
+    justify-content: space-evenly;
+    /*Alinhamento horizontal */
+    padding: 30px;
+    /* Preenchimento interno */
+     font-family: "Cormorant Garamond", serif;
 
 }
+
 /* Estilização da logo */
 .img-header {
-    width: 100px; /*Largura da logo Header*/
+    width: 100px;
+    /*Largura da logo Header*/
 }
 
 /* Estilização da lista */
-.ul-lista li { 
-list-style: none; /* removendo as bolinhas da lista */
+.ul-lista li {
+    list-style: none;
+    /* removendo as bolinhas da lista */
 }
+
 /* Estilização da UL (elemento pai da LI */
 .ul-lista {
     display: flex;
     /* tornando as litas lado a lado(flexbox)
      */
-    gap: 15px; /* Espaçamento entre as listas */
+    gap: 15px;
+    /* Espaçamento entre as listas */
 }
 
 /* Aqui estamos estilizando a âncora */
-    .ul-lista li a{
-        text-decoration: none;/*Removendo o sublinhado da âncora*/
-        color: black; /* Cor da letra */
-        font-size: 20px; /* Tamanho da letra */
-        text-transform: uppercase; /* Tornando o texto em CapsLock */
-        font-weight: 700; /*Peso/Espessura da letra*/
-        font-family: "UnifrakturMaguntia", cursive;/*Família de 
+.ul-lista li a {
+    text-decoration: none;
+    /*Removendo o sublinhado da âncora*/
+    color: black;
+    /* Cor da letra */
+    font-size: 20px;
+    /* Tamanho da letra */
+    text-transform: uppercase;
+    /* Tornando o texto em CapsLock */
+    font-weight: 700;
+    /*Peso/Espessura da letra*/
+    font-family: "UnifrakturMaguntia", cursive;
+    /*Família de 
         font */
-    }
+}
+/* fim do cabeçalho */
+
+/* section 01 */
+.img-section-01 {
+ width: 300px; /* Largura da imagem */
+}
+
+.section-01 {
+    display: flex;  /* tornando o div lado a lado| flexbox */
+    align-items: center;/* alinhamento vertical */
+    justify-content: space-evenly;/* alinhamento horizontal */
+    flex-direction: row; /* direção de caixas */
+ background-color: chocolate;/* cor de fundo */
+    padding: 40px;/* preenchimento interno */
+    gap: 30px; /* espaço entre as div */
+}
+.div-02 p {
+    background-color: chocolate;
+    font-size: 30px; /* tamanho da font */
+   margin-left: 30px; /* margem da esquerda - espaçamento*/
+   text-align: center; /* alinhamento do texto */
+}
+/* texto na section-01 */
+span {
+    color: yellow; /* cor da letra do span */
+    font-size: 40px; /* tamanho da letra do span */
+   
+}
