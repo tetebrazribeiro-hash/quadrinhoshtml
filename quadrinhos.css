@@ -84,3 +84,25 @@ span {
     font-size: 40px; /* tamanho da letra do span */
    
 }
+/* section-02 */
+/* ícones devem ser manipulados como textos (font-size,color...) */
+.fa-solid {
+    font-size: 60px;
+    color: yellow;  /* corde fundo */
+}
+.section-02 {
+    background-color: black; /* cor de fundo */
+    padding: 80px; /* preenchimento interno */
+    color: yellow; /* cor das letras (H2 e P) */
+    display: flex; /* Tornando as div lado a lado */
+    align-items: center; /* alinhamento vertical */
+    flex-direction: column; /* direção das caixas */
+   text-align: center; /* alinhamento texto ao centro */
+}
+.paragrafo-section-2 h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.paragrafo-section-2 p {
+font-size: 25px;
+}
