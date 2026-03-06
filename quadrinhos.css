@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
 
 /* Estilizando o Header */
@@ -15,7 +14,7 @@
     /*Alinhamento horizontal */
     padding: 30px;
     /* Preenchimento interno */
-     font-family: "Cormorant Garamond", serif;
+    font-family: "Cormorant Garamond", serif;
 
 }
 
@@ -56,53 +55,126 @@
     /*Família de 
         font */
 }
+
 /* fim do cabeçalho */
 
 /* section 01 */
 .img-section-01 {
- width: 300px; /* Largura da imagem */
+    width: 300px;
+    /* Largura da imagem */
 }
 
 .section-01 {
-    display: flex;  /* tornando o div lado a lado| flexbox */
-    align-items: center;/* alinhamento vertical */
-    justify-content: space-evenly;/* alinhamento horizontal */
-    flex-direction: row; /* direção de caixas */
- background-color: chocolate;/* cor de fundo */
-    padding: 40px;/* preenchimento interno */
-    gap: 30px; /* espaço entre as div */
+    display: flex;
+    /* tornando o div lado a lado| flexbox */
+    align-items: center;
+    /* alinhamento vertical */
+    justify-content: space-evenly;
+    /* alinhamento horizontal */
+    flex-direction: row;
+    /* direção de caixas */
+    background-color: chocolate;
+    /* cor de fundo */
+    padding: 40px;
+    /* preenchimento interno */
+    gap: 30px;
+    /* espaço entre as div */
 }
+
 .div-02 p {
     background-color: chocolate;
-    font-size: 30px; /* tamanho da font */
-   margin-left: 30px; /* margem da esquerda - espaçamento*/
-   text-align: center; /* alinhamento do texto */
+    font-size: 30px;
+    /* tamanho da font */
+    margin-left: 30px;
+    /* margem da esquerda - espaçamento*/
+    text-align: center;
+    /* alinhamento do texto */
 }
+
 /* texto na section-01 */
 span {
-    color: yellow; /* cor da letra do span */
-    font-size: 40px; /* tamanho da letra do span */
-   
+    color: yellow;
+    /* cor da letra do span */
+    font-size: 40px;
+    /* tamanho da letra do span */
+
 }
+
 /* section-02 */
 /* ícones devem ser manipulados como textos (font-size,color...) */
 .fa-solid {
     font-size: 60px;
-    color: yellow;  /* corde fundo */
+    color: yellow;
+    /* corde fundo */
 }
+
 .section-02 {
-    background-color: black; /* cor de fundo */
-    padding: 80px; /* preenchimento interno */
-    color: yellow; /* cor das letras (H2 e P) */
-    display: flex; /* Tornando as div lado a lado */
-    align-items: center; /* alinhamento vertical */
-    flex-direction: column; /* direção das caixas */
-   text-align: center; /* alinhamento texto ao centro */
+    background-color: black;
+    /* cor de fundo */
+    padding: 80px;
+    /* preenchimento interno */
+    color: yellow;
+    /* cor das letras (H2 e P) */
+    display: flex;
+    /* Tornando as div lado a lado */
+    align-items: center;
+    /* alinhamento vertical */
+    flex-direction: column;
+    /* direção das caixas */
+    text-align: center;
+    /* alinhamento texto ao centro */
 }
+
+/* estilização do titulo section2 */
 .paragrafo-section-2 h2 {
     font-size: 30px;
+    /* tamanho do texto h2 */
     text-transform: uppercase;
+    /* tornando o texto em caixa */
 }
+
 .paragrafo-section-2 p {
-font-size: 25px;
+    /* estilização do parágrafo */
+    font-size: 25px;
+    /* tamanho da letra */
 }
+
+.div-icon i {
+    /* div que guarda os ícones */
+    display: flex;
+    /* tornando a caixa do flex */
+    gap: 20px;
+    /* brecha entre os Icon */
+}
+
+/* fim da section-02 */
+
+/* inicio section-03 */
+.section-03 {
+    background-image: url(snoopyquadrinhos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+.section-03 button {
+    padding: 7px;
+    /* preenchimento interno */
+    width: 150px;
+    /* largura do button */
+    background-color: yellow;
+    /* cor de fundo */
+    color:black;
+    /* cor da letra*/
+    font-weight: 800;
+    /* espessura da letra */
+    border: none;
+    /* removendo bordas do button */
+}
+    .hr {
+        
+    }
