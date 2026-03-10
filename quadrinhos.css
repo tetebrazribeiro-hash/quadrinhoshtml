@@ -160,7 +160,9 @@ span {
     align-items: center;
     justify-content: center;
 }
-  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
 .section-03 button {
     padding: 7px;
     /* preenchimento interno */
@@ -168,13 +170,152 @@ span {
     /* largura do button */
     background-color: yellow;
     /* cor de fundo */
-    color:black;
+    color: black;
     /* cor da letra*/
     font-weight: 800;
     /* espessura da letra */
     border: none;
     /* removendo bordas do button */
 }
-    .hr {
-        
+
+.hr {}
+
+/* section 07 */
+.secttion-07 {
+    background-image: url(imge.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: fixed;
+    padding: 180px;
+    display: flex;
+    /* alinhamento vertical */
+    justify-content: center;
+    /* alinhamento horizontal */
+}
+
+.btn {
+    padding: 7px;
+    background-color: black;
+    color: yellow;
+    width: 150px;
+    border: none;
+}
+
+.section-04 div {
+    width: 300px;
+    /* largura da caixa */
+    height: 300px;
+    /* altura da caixa */
+    background-color: antiquewhite;
+    /* cor de fundo */
+    padding: 15px;
+    /* preenchimento interno */
+    text-align: center;
+    /* alinhamento dos texts */
+}
+
+/* formatação da section 05} */
+.section-05 {
+    display: flex;
+    /* deixando as div lado a lado */
+    align-items: center;
+    /*alinhamento vertical  */
+    justify-content: space-evenly;
+    /*alinhamento horizontal  */
+    gap: 30px;
+    /* espaço entre as caixa */
+    padding: 60px;
+    /* preenchimento interno das div */
+    background-color: black;
+}
+
+.section-05 div {
+    width: 300px;
+    height: 300px;
+    padding: 15px;
+    background-color: orange;
+    text-align: center;
+}
+
+
+/* estilização div-02 | segunda caixa */
+.caixa-02 {
+    background-image: url(imge.jpg);
+    /* inserindo img de fundo */
+    background-position: center;
+    /* posicionamento img */
+    background-repeat: no-repeat;
+    /* desativando a repetição */
+    background-size: cover;
+    /* preenchimento completo img */
+    /* background-attachment: fixed */
+}
+
+/* estilização div-02 | segunda caixa */
+.caixa-03 {
+    background-image: url();
+    /* inserindo img de fundo */
+    background-position: center;
+    /* posicionamento img */
+    background-repeat: no-repeat;
+    /* desativando a repetição */
+    background-size: cover;
+    /* preenchimento completo img */
+    /* background-attachment: fixed */
+}
+/* estilização´ttulo caixa 01 */
+    .caixa-01 h2 {
+        font-size: 25px; /* tamanho da letra */
+        text-transform: uppercase;/* letra em caixa alta  */
+        margin-top: 30px; /* espaçamento superior */
     }
+    /* estilização do parágrafo caixa 01 */
+    .caixa-01 p{
+        font-size: 20px;
+        /* tamanho da letra */
+        font-weight: 700;
+        /* peso da font */
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+    /* estilização dos ícones */
+    .fa-star, .fa-star-half {
+        font-size: 30px;/* tamanho do icon */
+        color: gold;/* cores do icon */
+    }
+    .fa-github {
+        font-size: 70px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        color:black;
+    }
+    .caixa-03 p {
+        font-size: 20px;
+        /* tamanho da letra */
+        font-weight: 700;
+        /* peso da font */
+
+    }
+    /* estilizando button caixa 03 */
+    .caixa-03 button {
+        padding: 7px; /* preenchimento interno */
+        background-color: black; /* cor de fundo */
+        color: aliceblue; /* cor da letra */
+        width: 130px; /* largura do button */
+        border: none; /* removendo borda */
+    }
+    .footer {
+    background-color: black;
+padding: 80px;
+display: flex; 
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.footer .fa-instragram, .fa-youtube, .fa-x-twitter {
+    color: yellow;
+    font-size: 40px;
+}
+.caixa-footer {
+    text-align: center;
+}
