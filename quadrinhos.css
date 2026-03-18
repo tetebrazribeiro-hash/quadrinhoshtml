@@ -1,196 +1,138 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+* {
+  scroll-behavior: smooth; /* tarnsição no scroll de rolagem */
+  font-family: 'Courier New', Courier, monospace; /* família de fonte universal */
+  list-style: none; /* removendo estilo de lista universal */
+  margin: 0; /* removendo os espaçamentos laterais e superiores */
+  padding: 0; /* desabilitando preechimento aplicado por padrão */
+}
 
 /* Estilizando o Header */
-.cabecalho {
-    background-color: yellow;
-    /*Cor de fundo
-     do header*/
+header {
+    padding: 25px;
+    /*responsavel pelo preenchimento interno/tamanho*/
+    background-color: orange;
+    /*Cor de fundo*/
     display: flex;
-    /*Tornando os itens lado a 
-     lado | Flexbox*/
-    align-items: center;
-    /*Alinhamento vertical */
+    /*tornando os itens Flex/lado a lado*/
     justify-content: space-evenly;
-    /*Alinhamento horizontal */
-    padding: 30px;
-    /* Preenchimento interno */
-    font-family: "Cormorant Garamond", serif;
+    /*Justificando o conteúdo ao centro*/
+    align-items: center;
+    /*responsável por alinhar verticalmente os itens*/
 
+    position: sticky;/*Faz com que o elemento fique "grudado" na tela quando o usuário rolar a página */
+    top: 0;/*Define que o elemento ficará preso ao topo da tela (0px de distância do topo)*/
+    left: 0;/*Define o alinhamento à esquerda da página, mantendo 0px de distância*/
+    z-index: 1; /*Controla a sobreposição do elemento sobre outros elementos da página.*/
 }
 
-/* Estilização da logo */
-.img-header {
-    width: 100px;
-    /*Largura da logo Header*/
+
+
+/* Estilizando o ícone */
+header img {
+   width: 100px;
 }
 
-/* Estilização da lista */
-.ul-lista li {
-    list-style: none;
-    /* removendo as bolinhas da lista */
+/* ESTILIZANDO O TÍTULO */
+header h1 {
+    color: yellow;
+    /*cor da letra*/
+    font-size: 36px;
+    /*Tamanho da letra*/
+    font-family: "Playfair Display", serif;
 }
 
-/* Estilização da UL (elemento pai da LI */
-.ul-lista {
-    display: flex;
-    /* tornando as litas lado a lado(flexbox)
-     */
-    gap: 15px;
-    /* Espaçamento entre as listas */
+.list-menu ul { /*Alteração na lista não ordenada (elemento pai)*/
+    display: flex; /*tornando as ( li ) flex/lado a lado*/
+    justify-content: center; /*Deixando elas centralizadas*/
+    gap: 20px; /*Espaço entre as ( li )*/
 }
 
-/* Aqui estamos estilizando a âncora */
-.ul-lista li a {
-    text-decoration: none;
-    /*Removendo o sublinhado da âncora*/
-    color: black;
-    /* Cor da letra */
-    font-size: 20px;
-    /* Tamanho da letra */
-    text-transform: uppercase;
-    /* Tornando o texto em CapsLock */
-    font-weight: 700;
-    /*Peso/Espessura da letra*/
-    font-family: "UnifrakturMaguntia", cursive;
-    /*Família de 
-        font */
+.list-menu ul li { /*Alteração da Lista (li) (elemento filho)*/
+    list-style: none; /*Removendo o estilo de lista aplicado por padrão*/
 }
 
-/* fim do cabeçalho */
+.list-menu ul li a {
+    text-decoration: none; /*remoção do sublinhado (Decoração de texto: Nenhuma)*/
+    color: yellow;
+}
 
-/* section 01 */
+.list-menu ul li a:hover {
+  color: yellow;
+}
+/* FIM DO CABEÇALHO */
+
+/* SECTION 01 */
 .img-section-01 {
-    width: 300px;
-    /* Largura da imagem */
+    width: 260px; /*Largura da imagem*/
+    margin-left: 20px;
 }
 
 .section-01 {
-    display: flex;
-    /* tornando o div lado a lado| flexbox */
-    align-items: center;
-    /* alinhamento vertical */
-    justify-content: space-evenly;
-    /* alinhamento horizontal */
-    flex-direction: row;
-    /* direção de caixas */
-    background-color: chocolate;
-    /* cor de fundo */
-    padding: 40px;
-    /* preenchimento interno */
-    gap: 30px;
-    /* espaço entre as div */
+ display: flex; /*tornando as div lado a lado | Flexbox*/
+ align-items: center;/*alinhamento vertical*/
+ justify-content: space-evenly;/*alinhamento horizontal*/
+ flex-direction: row; /*Direção das caixas*/
+ background-color: orange; /*cor de fundo*/
+ padding: 40px;/*preenchimento interno*/
+ gap: 60px;  /*espaço entre as div*/    
 }
 
 .div-02 p {
-    background-color: chocolate;
-    font-size: 30px;
-    /* tamanho da font */
-    margin-left: 30px;
-    /* margem da esquerda - espaçamento*/
-    text-align: center;
-    /* alinhamento do texto */
+    color: black; /*cor da letra*/
+    font-size: 32px; /*tamanho da font*/
+    margin-left: 30px; /*Margem da esquerda - espaçamento*/
+    text-align: center; /*alinhamento do texto*/
 }
-
-/* texto na section-01 */
+/* Texto em destaque da section-01 */
 span {
-    color: yellow;
-    /* cor da letra do span */
-    font-size: 40px;
-    /* tamanho da letra do span */
-
+    color: yellow; /*cor da letra do span*/
+    font-size: 40px; /*tamanho da letra span*/
 }
+/* FIM DA SECTION-01 */
 
-/* section-02 */
-/* ícones devem ser manipulados como textos (font-size,color...) */
-.fa-solid {
+
+
+/* SECTION 02 */
+/* ícones devem ser manipulados como textos (Font-size, color...) */
+.fa-brands {
     font-size: 60px;
     color: yellow;
-    /* corde fundo */
+    
+}
+.section-02{
+    background-color: yellow; /*cor de fundo*/
+    padding: 50px; /*preenchimento interno*/
+    color: yellow; /*cor das letras (H2 e P)*/
+    display: flex; /*Tornando as Div lado a lado*/
+    align-items: center; /*alinhamento vertical*/
+    justify-content: center;/*alinhamento horizontal*/
+    flex-direction: column;/*direção das caixas*/
+    text-align: center;/*alinhando texto ao centro*/
 }
 
-.section-02 {
-    background-color: black;
-    /* cor de fundo */
-    padding: 80px;
-    /* preenchimento interno */
-    color: yellow;
-    /* cor das letras (H2 e P) */
-    display: flex;
-    /* Tornando as div lado a lado */
-    align-items: center;
-    /* alinhamento vertical */
-    flex-direction: column;
-    /* direção das caixas */
-    text-align: center;
-    /* alinhamento texto ao centro */
-}
-
-/* estilização do titulo section2 */
 .paragrafo-section-2 h2 {
     font-size: 30px;
-    /* tamanho do texto h2 */
     text-transform: uppercase;
-    /* tornando o texto em caixa */
 }
-
 .paragrafo-section-2 p {
-    /* estilização do parágrafo */
     font-size: 25px;
-    /* tamanho da letra */
 }
 
-.div-icon i {
-    /* div que guarda os ícones */
-    display: flex;
-    /* tornando a caixa do flex */
-    gap: 20px;
-    /* brecha entre os Icon */
-}
 
-/* fim da section-02 */
-
-/* inicio section-03 */
+/* SECTION 03 */
 .section-03 {
-    background-image: url(snoopyquadrinhos.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
-
-.section-03 button {
-    padding: 7px;
-    /* preenchimento interno */
-    width: 150px;
-    /* largura do button */
-    background-color: yellow;
-    /* cor de fundo */
-    color: black;
-    /* cor da letra*/
-    font-weight: 800;
-    /* espessura da letra */
-    border: none;
-    /* removendo bordas do button */
-}
-
-.hr {}
-
-/* section 07 */
-.secttion-07 {
-    background-image: url(imge.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: fixed;
-    padding: 180px;
-    display: flex;
-    /* alinhamento vertical */
-    justify-content: center;
-    /* alinhamento horizontal */
+   background-image: url(snoopyquadrinhos.jpg);
+   background-position: top;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   padding: 180px;
+   display: flex;
+   align-items: center; /*alinhamento vertical*/
+   justify-content: center; /*alinhamento horizontal*/ 
 }
 
 .btn {
@@ -199,145 +141,109 @@ span {
     color: yellow;
     width: 150px;
     border: none;
+    
 }
 
+.btn:hover{
+    background-color: yellow;
+    color: black;
+}
+
+/* Estelizando todas as div ao mesmo tempo */
 .section-04 div {
-    width: 300px;
-    /* largura da caixa */
-    height: 300px;
-    /* altura da caixa */
-    background-color: antiquewhite;
-    /* cor de fundo */
-    padding: 15px;
-    /* preenchimento interno */
-    text-align: center;
-    /* alinhamento dos texts */
+    width: 300px; /*largura da caixa*/
+    height: 300px;/*altura da caixa*/
+    background-color: yellow;/*cor de fundo*/
+    padding: 15px; /*preenchimento interno*/
+    text-align: center;/*alinhamento dos text*/
+    box-shadow: 10px 10px 20px yellow;
+    transition: 0.8s;
+}
+.section-04 div:hover{
+    box-shadow: 15px 15px 25px yellow;
 }
 
-/* formatação da section 05} */
-.section-05 {
-    display: flex;
-    /* deixando as div lado a lado */
-    align-items: center;
-    /*alinhamento vertical  */
-    justify-content: space-evenly;
-    /*alinhamento horizontal  */
-    gap: 30px;
-    /* espaço entre as caixa */
-    padding: 60px;
-    /* preenchimento interno das div */
-    background-color: black;
+/* formatação da section 04 */
+.section-04 {
+    display: flex; /*deixando as div lado a lado*/
+    align-items: center; /*alinhamento vertical*/
+    justify-content: space-evenly;/*alinhamento horizontal*/
+    gap: 30px;/*espaço entre as caixa*/
+    padding: 60px;/*preenchimento interno das div*/
 }
 
-.section-05 div {
-    width: 300px;
-    height: 300px;
-    padding: 15px;
-    background-color: orange;
-    text-align: center;
-}
-
-
-/* estilização div-02 | segunda caixa */
+* estilização div-02 | segunda caixa */
 .caixa-02 {
-    background-image: url(imge.jpg);
-    /* inserindo img de fundo */
+    background-image: url(gss.png);
+    /* inserindo img no fundo */
     background-position: center;
     /* posicionamento img */
     background-repeat: no-repeat;
-    /* desativando a repetição */
     background-size: cover;
     /* preenchimento completo img */
     /* background-attachment: fixed */
 }
 
-/* estilização div-02 | segunda caixa */
-.caixa-02 {
-    background-image: url();
-    /* inserindo img de fundo */
-    background-position: center;
-    /* posicionamento img */
-    background-repeat: no-repeat;
-    /* desativando a repetição */
-    background-size: cover;
-    /* preenchimento completo img */
-    /* background-attachment: fixed */
-}
-
-/* estilização´ttulo caixa 01 */
+/* estilização título caixa 01 */
 .caixa-01 h2 {
     font-size: 25px;
     /* tamanho da letra */
     text-transform: uppercase;
-    /* letra em caixa alta  */
+    /* letra em caixa alta */
     margin-top: 30px;
     /* espaçamento superior */
-}
 
+}
 /* estilização do parágrafo caixa 01 */
 .caixa-01 p {
-    font-size: 20px;
-    /* tamanho da letra */
-    font-weight: 700;
-    /* peso da font */
-    margin-top: 15px;
+    font-size: 20px; /*tamanho da letra*/
+    font-weight: 700; /*peso da font*/
+    margin-top: 20px;
     margin-bottom: 25px;
 }
-
 /* estilização dos ícones */
-.fa-star,
-.fa-star-half {
-    font-size: 30px;
-    /* tamanho do icon */
-    color: gold;
-    /* cores do icon */
+.fa-star, .fa-star-half {
+    font-size: 30px; /*tamanho dos icon*/
+    color: gold; /*cores dos icon*/
 }
 
-.fa-github {
-    font-size: 70px;
-    margin-top: 30px;
-    margin-bottom: 15px;
-    color: black;
+/* estilização caixa 03 - icon */
+.fa-square-instagram {
+    font-size: 70px; /*tamanho do icon*/
+    margin-top: 30px; /*espaçamento superior*/
+    margin-bottom: 15px; /*espaçamento inferior*/
+    color: yellow; /*cor do icon*/
 }
 
 .caixa-03 p {
-    font-size: 20px;
-    /* tamanho da letra */
-    font-weight: 700;
-    /* peso da font */
-
+    font-size: 20px; /*tamanho da letra*/
+    font-weight: 700; /*peso da font*/
 }
-
 /* estilizando button caixa 03 */
 .caixa-03 button {
-    padding: 7px;
-    /* preenchimento interno */
-    background-color: black;
-    /* cor de fundo */
-    color: aliceblue;
-    /* cor da letra */
-    width: 130px;
-    /* largura do button */
-    border: none;
-    /* removendo borda */
+    padding: 7px;/*preenchimento interno*/
+    background-color: orange; /*cor de fundo*/
+    color: black; /*cor da letra*/
+    width: 130px; /*largura do button*/
+    border: none; /*removendo borda*/
 }
 
-.footer {
+
+footer {
     background-color: black;
     padding: 80px;
+    color: yellow;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.footer .fa-instragram,
-.fa-youtube,
-.fa-x-twitter {
+footer .fa-youtube{
     color: yellow;
     font-size: 40px;
 }
 
-.caixa-footer {
+.caixa-icon {
     text-align: center;
 }
